@@ -1,0 +1,290 @@
+// components/Footer/index.module.scss
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 64px 0 30px 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-top: 1px solid #d2d2d2;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      width: 100%;
+      flex-wrap: wrap;
+
+      @media (max-width: 1024px) {
+        gap: 30px;
+      }
+
+      @media (max-width: 992px) {
+        gap: 40px;
+        justify-content: flex-start;
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 35px;
+      }
+
+      @media (max-width: 480px) {
+        gap: 30px;
+      }
+    }
+
+    &_bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+      @media (max-width: 768px) {
+        padding-top: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #333333;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          font-size: 13px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 10px;
+          padding: 0 10px;
+        }
+
+        span {
+          color: #f5a623;
+          font-weight: 600;
+          letter-spacing: 2px;
+
+          @media (max-width: 480px) {
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  &_logo {
+    object-fit: contain;
+    flex-shrink: 0;
+
+    @media (max-width: 768px) {
+      width: 100px;
+      height: auto;
+    }
+
+    @media (max-width: 480px) {
+      width: 85px;
+      height: auto;
+    }
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    line-height: 15px;
+    flex: 1;
+    min-width: 140px;
+
+    @media (max-width: 992px) {
+      min-width: 160px;
+      flex: 0 1 auto;
+    }
+
+    @media (max-width: 768px) {
+      min-width: unset;
+      width: 100%;
+      gap: 10px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0 0 8px 0;
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 400;
+      transition: all 0.2s ease;
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #f5a623;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: #f3a833;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 2px 0;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+        padding: 3px 0;
+      }
+    }
+
+    .email {
+      font-weight: 500;
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+        word-break: break-all;
+      }
+    }
+
+    .btn_contact {
+      background-color: #fffaf0;
+      color: #f5a623;
+      border: 1px solid #f5a623;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 8px;
+      text-transform: capitalize;
+      width: fit-content;
+
+      &:hover {
+        background-color: #f5a623;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      @media (max-width: 768px) {
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        padding: 12px 20px;
+        font-size: 13px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &_divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px 0 0 0;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      margin: 30px 0 0 0;
+    }
+  }
+}
+
+// Дополнительная адаптация для очень маленьких экранов
+@media (max-width: 380px) {
+  .footer {
+    padding: 40px 0 20px 0;
+
+    &_wrapper {
+      &_top {
+        gap: 25px;
+      }
+
+      &_bottom p {
+        font-size: 11px;
+      }
+    }
+
+    &_column {
+      h2 {
+        font-size: 12px;
+      }
+
+      a {
+        font-size: 12px;
+      }
+
+      .email {
+        font-size: 12px;
+      }
+
+      .btn_contact {
+        font-size: 12px;
+        padding: 10px 16px;
+      }
+    }
+
+    &_logo {
+      width: 75px;
+    }
+
+    &_divider {
+      margin: 25px 0 0 0;
+    }
+  }
+}
+
+// Планшеты и маленькие ноутбуки
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    &_wrapper {
+      &_top {
+        gap: 30px;
+      }
+    }
+
+    &_column {
+      min-width: 160px;
+
+      .btn_contact {
+        padding: 12px 24px;
+      }
+    }
+  }
+}

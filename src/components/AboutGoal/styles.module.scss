@@ -1,0 +1,75 @@
+.goal {
+  width: 100%;   
+  max-width: 1440px;      
+  min-height: 100px; /* Заменили fixed height на min-height */
+  display: flex;
+  margin: 35px auto; /* Центрируем блок, если max-width сработает */
+  justify-content: space-between;
+  align-items: center; /* Центрируем элементы по вертикали на десктопе */
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse; /* Сохраняем вашу логику переворота */
+    gap: 24px;
+    align-items: stretch;
+  }
+}
+
+.textCol {
+  display: flex;
+  align-items: flex-start; /* Выравнивание иконки по верхней линии текста */
+  gap: 24px; /* Чуть уменьшили отступ для гармонии */
+  flex: 1;
+
+  @media (max-width: 480px) {
+    gap: 16px;
+  }
+}
+
+.iconRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #E8A33D;
+  font-weight: 700;
+  font-size: clamp(16px, 1.5vw, 20px); /* Исправлен порядок: min, preferred, max */
+  margin: 0;
+}
+
+.text {
+  margin-top: 8px;
+  font-size: clamp(14px, 1.2vw, 16px); /* Исправлен порядок */
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3B4D59;
+  margin-bottom: 0;
+}
+
+.imageCol {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    max-width: 100%; /* Картинка займет всю ширину на мобилке */
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+ @media (max-width: 768px) {
+  .image{
+    max-width: 100%; /* Картинка займет всю ширину на мобилке */
+    margin: 0 auto;
+  }
+
+  .textCol{
+    align-items: center; /* Центрируем текст и иконку на мобилке */
+  }
+
+}

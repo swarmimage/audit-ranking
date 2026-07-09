@@ -1,0 +1,64 @@
+.stats {
+  width: 100%;
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid #D2D2D2;
+  border-radius: 6px;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card_box {
+  display: flex;
+  flex-direction: column; // возможно, вы хотели колонку? 
+  // но в JSX у вас два спана, и вы написали row, но потом padding:20px
+  // Давайте уточним: если вы хотите, чтобы value и label были в колонку, то column.
+  // Если в строку, то row. У вас сейчас row, но padding:20px добавляет отступы внутри.
+  // Скорее всего, вы хотели, чтобы value и label шли друг под другом (колонка)
+  // потому что у вас в карточке иконка слева, а справа два блока: значение и подпись.
+  // Сейчас вы сделали display:flex, но не указали направление, поэтому по умолчанию row.
+  // Если вы хотите колонку, добавьте flex-direction: column.
+  // Также padding:20px может быть лишним, т.к. у карточки уже есть padding.
+  // Я предлагаю убрать padding и задать flex-direction: column.
+  flex-direction: column;
+  // если нужны отступы, можно добавить gap
+  gap: 4px;
+}
+
+.value {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 700;
+}
+
+.label {
+  font-size: clamp(12px, 1.1vw, 14px);
+  color: #555;
+  line-height: 1.4;
+  // убираем вложенный .card_box отсюда
+}

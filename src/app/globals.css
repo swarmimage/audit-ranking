@@ -5,22 +5,41 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+body {
+  font-family: var(--font-inter), sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
+html {
+  scroll-behavior: smooth !important;
+}
+.global-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 60px);
+}
+h1 {
+  color: #f5a623;
+  font-size: 32px;
+  font-weight: 700;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @media (max-width: 480px) {
+    font-size: 22px;
   }
 }
+h2 {
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+p {
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+  font-weight: 400;
+  font-size: 16px;
 }

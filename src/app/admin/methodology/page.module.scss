@@ -1,0 +1,160 @@
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0c2340;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0c2340;
+  margin-bottom: 1.25rem;
+}
+
+.currentDoc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.docInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.docIcon {
+  font-size: 28px;
+}
+
+.docName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c2340;
+  margin-bottom: 2px;
+}
+
+.docDate {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.warning {
+  font-size: 13px;
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+  }
+}
+
+.dropzone {
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: #f3a833;
+  }
+
+  p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 4px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #94a3b8;
+  }
+}
+
+.fileName {
+  font-size: 14px;
+  color: #0c2340;
+  font-weight: 500;
+}
+
+.error {
+  font-size: 13px;
+  color: #e53e3e;
+  margin-bottom: 0.75rem;
+}
+
+.success {
+  font-size: 13px;
+  color: #38a169;
+  margin-bottom: 0.75rem;
+}
+
+.btnUpload {
+  background: #f3a833;
+  color: #ffffff;
+  border: none;
+  padding: 9px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #e29724;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.btnDelete {
+  background: #fff5f5;
+  color: #e53e3e;
+  border: 1px solid #fed7d7;
+  padding: 7px 16px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #fed7d7;
+  }
+}
+
+.muted {
+  font-size: 14px;
+  color: #94a3b8;
+  padding: 0.5rem 0;
+}

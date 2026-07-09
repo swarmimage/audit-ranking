@@ -1,0 +1,98 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+
+  @media (max-width: 420px) {
+    margin: 0 1rem;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c2340;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+  }
+
+  input {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0c2340;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+
+    &:focus {
+      border-color: #f3a833;
+    }
+  }
+}
+
+.error {
+  font-size: 13px;
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+}
+
+.btnLogin {
+  width: 100%;
+  background: #f3a833;
+  color: #ffffff;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background: #e29724;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

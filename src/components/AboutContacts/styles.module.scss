@@ -1,0 +1,56 @@
+// components/About/AboutContacts/index.module.scss
+.contacts {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  border: 1px solid #D2D2D2;
+  border-radius: 3px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: 6px;
+  padding: 18px;
+  display: flex;
+  gap: 22px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  line-height: 50%;
+  gap: 6px;
+  min-width: 0;
+
+  .label {
+    font-weight: 500;
+    font-size: clamp(12px, 1.2vw, 12px);
+  }
+
+  p {
+    font-size: clamp(12px, 1.1vw, 12px);
+    line-height: 1.5;
+    color: #3B4D59;
+    word-break: break-word;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+}

@@ -1,0 +1,86 @@
+// components/About/AboutHistory/index.module.scss
+.history {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #D2D2D2;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  position: relative;
+  padding-top: 22px;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #F5A623;
+
+  @media (max-width: 768px) {
+    position: static;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.item {
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.year {
+  display: block;
+  font-weight: 500;
+  font-size: clamp(14px, 1.3vw, 17px);
+  margin-bottom: 6px;
+}
+
+.text {
+  font-size: clamp(12px, 1.1vw, 14px);
+  line-height: 1.5;
+  color: #555;
+  width: 215px;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+}

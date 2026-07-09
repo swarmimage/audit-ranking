@@ -1,0 +1,186 @@
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0c2340;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0c2340;
+  margin-bottom: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+  }
+
+  input {
+    padding: 9px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0c2340;
+    outline: none;
+    transition: border-color 0.2s;
+
+    &:focus {
+      border-color: #f3a833;
+    }
+  }
+}
+
+.dropzone {
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: #f3a833;
+  }
+
+  p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 4px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #94a3b8;
+  }
+}
+
+.fileName {
+  font-size: 14px;
+  color: #0c2340;
+  font-weight: 500;
+}
+
+.error {
+  font-size: 13px;
+  color: #e53e3e;
+  margin-bottom: 0.75rem;
+}
+
+.success {
+  font-size: 13px;
+  color: #38a169;
+  margin-bottom: 0.75rem;
+}
+
+.btnUpload {
+  background: #f3a833;
+  color: #ffffff;
+  border: none;
+  padding: 9px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #e29724;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// Десктоп таблица
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+
+  th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  td {
+    padding: 12px 12px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: middle;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.fileCell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Мобильные карточки
+.mobileList {
+  display: none;
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.mobileCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+}
