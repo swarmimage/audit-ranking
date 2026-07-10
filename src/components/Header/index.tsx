@@ -106,7 +106,9 @@ const Header: React.FC = () => {
               <span className={styles.lang_divider}>/</span>
               <span className={lang === "uz" ? styles.lang_active : ""}>UZ</span>
             </button>
-            <button className={styles.btn_primary}>{t("header.requestQuote")}</button>
+            <Link href="/contacts" className={styles.btn_primary}>
+              {t("header.requestQuote")}
+            </Link>
           </div>
 
           <button
