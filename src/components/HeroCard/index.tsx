@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import { useLanguage } from "@/i18n/LanguageContext";
+import Link from "next/link";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -12,24 +13,25 @@ const Hero = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  }; 
+  };
   return (
     <section className={styles.hero}>
       <div className="global-container">
         <div className={styles.hero_wrapper}>
           <div className={styles.hero_content}>
-
             <h1 className={styles.hero_title}>
               {t("hero.titleLine1")} <br /> {t("hero.titleLine2")} <br />
-              <span className={styles.hero_title_orange}>{t("hero.titleLine3")}</span>
+              <span className={styles.hero_title_orange}>
+                {t("hero.titleLine3")}
+              </span>
             </h1>
 
-            <p className={styles.hero_text}>
-              {t("hero.text")}
-            </p>
+            <p className={styles.hero_text}>{t("hero.text")}</p>
 
             <div className={styles.hero_actions}>
-              <button className={styles.btn_orange}> <a href="/contacts">{t("hero.contactUs")}</a></button>
+                <Link href="/contacts" className={styles.btn_orange}>
+                  {t("hero.contactUs")}
+                </Link>
               <button className={styles.btn_gray} onClick={scrollToDocument}>
                 {t("hero.viewDecree")}
                 <span>

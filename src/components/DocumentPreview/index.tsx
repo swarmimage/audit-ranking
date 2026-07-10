@@ -66,23 +66,24 @@ export default function DocumentPreview({ data = documentData }) {
   };
 
   return (
+    
     <div className="global-container">
       <div className={styles.card} id="document-section">
-       <a
-  href={'https://lex.uz/uz/docs/5307899?ONDATE=25.09.2025'}
-  className={styles.downloadBtn}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Image
-    src="/download.svg"
-    width={22}
-    height={21}
-    alt="RankAudit Logo"
-    className={styles.header_logo}
-    priority
-  />
-</a>
+        <a
+          href={"https://lex.uz/uz/docs/5307899?ONDATE=25.09.2025"}
+          className={styles.downloadBtn}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/download.svg"
+            width={22}
+            height={21}
+            alt="RankAudit Logo"
+            className={styles.header_logo}
+            priority
+          />
+        </a>
 
         <div
           ref={contentRef}
@@ -118,7 +119,9 @@ export default function DocumentPreview({ data = documentData }) {
             onClick={handleToggle}
             aria-expanded={expanded}
           >
-            {expanded ? t("documentPreview.collapse") : t("documentPreview.showFullText")}
+            {expanded
+              ? t("documentPreview.collapse")
+              : t("documentPreview.showFullText")}
             <svg
               className={`${styles.chevron} ${expanded ? styles.chevronUp : ""}`}
               width="16"

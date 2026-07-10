@@ -95,12 +95,25 @@
     }
 
     .btn_orange {
-      background-color: #f5a623;
+            font-family: var(--font-inter), sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 19px 19px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      background-color: #F5A623;
       color: #24333d;
 
       &:hover {
-        background-color: #e29724;
+        background-color: #ff9d00;
       }
+
     }
 
     .btn_gray {

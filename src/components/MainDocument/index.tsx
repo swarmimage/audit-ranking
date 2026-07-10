@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import "@/app/globals.css";
 import Image from 'next/image';
 import { useLanguage } from '@/i18n/LanguageContext';
+import Link from 'next/link';
 
 export default function MainDocument() {
   const { t } = useLanguage();
@@ -53,7 +54,7 @@ export default function MainDocument() {
 
         {/* Правая часть: Кнопка действия */}
         <div className={styles.documentCard__action}>
-          <a href="#document-section" className={styles.documentCard__btn}>
+          <Link href="#document-section" className={styles.documentCard__btn}>
             {doc.showFullText}
             <svg
               fill="none"
@@ -68,7 +69,7 @@ export default function MainDocument() {
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
 
       </div>

@@ -23,25 +23,29 @@
   p {
     font-size: clamp(13px, 1.2vw, 16px);
     line-height: 1.8;
-    text-align:justify;
-    hyphens: auto;
-    letter-spacing: 0.3px;
+    text-align: justify;
 
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: auto;
 
     @media (max-width: 768px) {
-    word-break: break-word;
+      text-align: justify;
+      text-justify: inter-word;
+      overflow-wrap: break-word;
+      word-break: normal;
+      hyphens: auto;
       line-height: 1.7;
     }
+
     @media (max-width: 480px) {
       font-size: 13px;
       line-height: 1.6;
-      text-align: left;      // ← чтобы избежать огромных пробелов
-      letter-spacing: 0.2px;
-    }
-    @media (max-width: 360px) {
-      font-size: 12px;
-      line-height: 1.5;
-      letter-spacing: 0.1px;
+      text-align: justify;
+      text-justify: inter-word;
+      overflow-wrap: break-word;
+      word-break: normal;
+      hyphens: auto;
     }
   }
 }

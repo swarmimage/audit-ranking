@@ -44,14 +44,17 @@ const Footer: React.FC = () => {
 
             <div className={styles.footer_column}>
               <h2>{t("footer.contactsTitle")}</h2>
-              <a href="mailto:info@rankaudit.ru" className={styles.email}>info@rankaudit.ru</a>
-              <button className={styles.btn_contact}>{t("footer.contactUs")}</button>
+              <a href="mailto:auditrenkin@gmail.com" className={styles.email}>
+                auditrenkin@gmail.com
+              </a>
+              <Link href="/contacts" className={styles.btn_contact}>
+                {t("footer.contactUs")}
+              </Link>
             </div>
           </div>
 
           <hr className={styles.footer_divider} />
 
-          {/* Нижняя часть (Копирайт) */}
           <div className={styles.footer_wrapper_bottom}>
             <p>
               <span>{t("footer.copyright")}</span> | {t("footer.companyDesc")}

@@ -119,8 +119,8 @@ const Header: React.FC = () => {
           >
              <Image
               src="/Header/burger.svg"
-              width={5}
-              height={5}
+              width={10}
+              height={10}
               alt="RankAudit Logo"
               className={styles.header_logo}
               priority

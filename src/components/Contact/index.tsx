@@ -66,7 +66,7 @@ const ContactModule = () => {
                   <span className={styles.icon}>
                     <Image src={'./contact/mail.svg'} alt="Email" width={24} height={24} />
                   </span>
-                  <a href="mailto:info@auditreyting.uz">info@auditreyting.uz</a>
+                  <a href="mailto:auditrenkin@gmail.com">auditrenkin@gmail.com</a>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.icon}>
