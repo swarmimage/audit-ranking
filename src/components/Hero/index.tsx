@@ -52,6 +52,7 @@ export default function HeroCard():React.ReactNode {
                   className={styles.icon} 
                   width={20} 
                   height={20} 
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
               <div className={styles.content}>

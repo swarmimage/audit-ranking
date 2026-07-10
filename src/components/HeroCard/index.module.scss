@@ -95,10 +95,9 @@
     }
 
     .btn_orange {
-            font-family: var(--font-inter), sans-serif;
+      font-family: var(--font-inter), sans-serif;
       font-size: 14px;
       font-weight: 600;
-      padding: 19px 19px;
       border-radius: 5px;
       cursor: pointer;
       border: none;
@@ -107,22 +106,20 @@
       align-items: center;
       justify-content: center;
       flex: 1;
-      background-color: #F5A623;
+      background-color: #f5a623;
       color: #24333d;
 
       &:hover {
         background-color: #ff9d00;
       }
-
     }
 
     .btn_gray {
       background-color: #ffffff;
       color: #0c2340;
       gap: 8px;
-      border: 1px solid #DFE1E9;
+      border: 1px solid #dfe1e9;
 
-      
       span {
         display: flex;
         font-size: 16px;
@@ -230,6 +227,12 @@
         font-size: 14px;
         padding: 16px 24px;
       }
+
+      .btn_orange {
+        width: 100%;
+        font-size: 14px;
+        padding: 16px 24px;
+      }
     }
   }
 }
@@ -263,6 +266,12 @@
         font-size: 13px;
         padding: 14px 20px;
         min-height: 48px;
+      }
+
+      .btn_orange {
+        width: 100%;
+        font-size: 14px;
+        padding: 14px 20px;
       }
     }
   }

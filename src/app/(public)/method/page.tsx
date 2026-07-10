@@ -1,10 +1,8 @@
 
 import MethodologyModule from "@/components/Method";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Методика | Рейтинговая компания",
-  description: "Методика рэнкинга аудиторских организаций Республики Узбекистан",
-};
+export const metadata = createPageMetadata("method", "/method");
 
 export default function MethodologyPage() {
   return <MethodologyModule />;

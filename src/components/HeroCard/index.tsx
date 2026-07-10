@@ -41,7 +41,7 @@ const Hero = () => {
                     height={17}
                     alt="Arrow Icon"
                     className={styles.header_logo}
-                    priority
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </span>
               </button>
@@ -49,11 +49,11 @@ const Hero = () => {
           </div>
           <Image
             src="/main/Hero.svg"
-            width={500}
-            height={300}
+            width={558}
+            height={240}
             alt="Hero Image"
             className={styles.hero_image}
-            priority
+            style={{ height: "auto" }}
           />
         </div>
       </div>

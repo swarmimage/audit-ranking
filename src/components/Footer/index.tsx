@@ -19,11 +19,11 @@ const Footer: React.FC = () => {
             <Link href="/">
               <Image
                 src="/Footer/Footer.svg"
-                width={115}
-                height={61}
+                width={112}
+                height={58}
                 alt="RankAudit Logo"
                 className={styles.footer_logo}
-                priority
+                style={{ height: "auto" }}
               />
             </Link>
 

@@ -6,6 +6,7 @@ import NewsGrid from "@/components/News";
 import { NewsItem } from "@/components/News";
 import { adaptNewsItem } from "@/utils/newsAdapter";
 import { useLanguage } from "@/i18n/LanguageContext";
+import Script from "next/script";
 
 const NewsModule = () => {
   const { t } = useLanguage();
@@ -27,6 +28,19 @@ const NewsModule = () => {
 
   return (
     <div className="global-container">
+      {items.map((item) => {
+        const image = item.type === "card" ? item.thumbnail : item.type === "photo" ? item.image : undefined;
+        const articleSchema = {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          headline: item.title,
+          datePublished: item.date,
+          ...(image ? { image } : {}),
+          publisher: { "@type": "Organization", name: "AuditRanking", url: "https://auditranking.uz" },
+        };
+
+        return <Script key={item.id} id={`news-article-schema-${item.id}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />;
+      })}
       <h1 style={{ padding: "35px 0 10px" }}>{t("news.title")}</h1>
       {loading ? (
         <p style={{ color: "#6b7680", padding: "40px 0" }}>{t("news.loading")}</p>

@@ -1,9 +1,7 @@
 import NewsModule from "@/modules/NewsModule";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Новости | Архив новостей",
-  description: "Архив новостей аудиторских организаций Республики Узбекистан",
-};
+export const metadata = createPageMetadata("news", "/news");
 
 export default function NewsPage() {
   return <NewsModule />;

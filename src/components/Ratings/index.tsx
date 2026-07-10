@@ -22,6 +22,7 @@ const Ratings = () => {
   const [selectedRating, setSelectedRating] = useState<Rating | null>(null);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
   const [fileType, setFileType] = useState<FileType>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const previewRef = useRef<HTMLDivElement>(null);
@@ -31,7 +32,7 @@ const Ratings = () => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ratings`)
       .then((r) => r.json())
       .then((data) => setRatings(data))
-      .catch((err) => console.error("Ошибка загрузки:", err))
+      .catch(() => setLoadError(true))
       .finally(() => setPageLoading(false));
   }, []);
 
@@ -195,6 +196,7 @@ const Ratings = () => {
                     width={37}
                     height={48}
                     alt="Arrow Icon"
+                    style={{ height: "auto" }}
                   />
                 </div>{" "}
                 <p className={styles.emptyStateText}>{t("ratings.selectYear")}</p>
@@ -211,6 +213,10 @@ const Ratings = () => {
             <div className={styles.list}>
               {pageLoading ? (
                 <p className={styles.loadingText}>{t("ratings.loading")}</p>
+              ) : loadError ? (
+                <p className={styles.loadingText} role="alert">
+                  Не удалось загрузить рейтинги. Проверьте подключение к серверу.
+                </p>
               ) : ratings.length === 0 ? (
                 <p className={styles.loadingText}>{t("ratings.noRatings")}</p>
               ) : (

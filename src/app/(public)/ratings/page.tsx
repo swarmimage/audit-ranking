@@ -1,10 +1,8 @@
 import RatingsModule from "@/modules/RatingsModule";
+import { createPageMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-  title: "Реэнкинг | Архивы Рэнкингов аудиторских организаций Республики Узбекистан",
-  description: "Архивы рейтингов аудиторских организаций Республики Узбекистан",
-};
+export const metadata = createPageMetadata("ratings", "/ratings");
 
 export default function RatingsPage() {
   return <RatingsModule />;

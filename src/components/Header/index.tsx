@@ -49,11 +49,11 @@ const Header: React.FC = () => {
           <Link className={styles.header_logo_link} href="/" onClick={() => setIsMenuOpen(false)}>
             <Image
               src="/Header/Header.svg"
-              width={160}
-              height={40}
+              width={77}
+              height={49}
               alt="RankAudit Logo"
               className={styles.header_logo}
-              priority
+              style={{ width: "auto" }}
             />
             <div className={styles.header_logo_text}>
               <p className={styles.header_logo_text_primary}>{t("header.logoPrimary")}</p>
@@ -122,8 +122,7 @@ const Header: React.FC = () => {
               width={10}
               height={10}
               alt="RankAudit Logo"
-              className={styles.header_logo}
-              priority
+              style={{ width: "auto", height: "auto" }}
             />
           </button>
         </div>

@@ -1,10 +1,8 @@
 import RegulationsModule from "@/modules/RegulationsModule";
+import { createPageMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-  title: "Положения | Общие положения",
-  description: "Общие положения о деятельности аудиторских организаций Республики Узбекистан",
-};
+export const metadata = createPageMetadata("regulations", "/regulations");
 
 export default function RegulationsPage() {
   return <RegulationsModule />;

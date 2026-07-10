@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 interface Regulation {
@@ -169,9 +170,9 @@ const Regulations = () => {
                     <div className={styles.contactContent}>
                       <h4>{t("regulations.notFoundTitle")}</h4>
                       <p>{t("regulations.notFoundText")}</p>
-                      <a href="/contacts" className={styles.contactLink}>
+                      <Link href="/contacts" className={styles.contactLink}>
                         {t("regulations.contactUs")}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

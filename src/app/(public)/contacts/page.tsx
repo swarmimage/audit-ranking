@@ -1,10 +1,8 @@
 
 import ContactModule from "@/modules/ContactModule";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "контакты | Рейтинговая компания",
-  description: "Контактная информация Рейтинговой компании",
-};
+export const metadata = createPageMetadata("contacts", "/contacts");
 
 export default function ContactPage() {
   return <ContactModule />;
