@@ -32,8 +32,8 @@ export const translations = {
       disclosure: "Раскрытие информации",
       contactsTitle: "КОНТАКТЫ",
       contactUs: "Связаться с нами",
-      copyright: "© 2014–2017 ООО «Аудитрейтинг»",
-      companyDesc: "Рейтинговая компания Республики Узбекистан",
+      copyright: "© 2014–2017 ООО «АудитРейтинг»",
+      companyDesc: "Рэнкинговая компания Республики Узбекистан",
     },
     heroCard: {
       about: { title: "О нас", description: "Узнайте больше о нашей миссии, ценностях и принципах работы", linkText: "Подробнее" },
@@ -68,8 +68,8 @@ export const translations = {
     },
     aboutHero: {
       title: "О нас",
-      companyTitle: "Рэнкинговая компания Республики Узбекистан ООО «АудитРэнкинг»",
-      text: "В соответствии с Законом «Об аудиторской деятельности» и постановлением Президента Республики Узбекистан «О дальнейшем совершенствовании аудиторских организаций и повышении их ответственности за качество оказываемых услуг» от 4 апреля 2007 года № ПП-615 общественные профессиональные объединения аудиторов совместно с ООО «Аудитрейтинг» осуществляют рейтинговую оценку деятельности аудиторских организаций по итогам года. Для решения организационных вопросов, связанных с проведением рейтинга, общественными профессиональными организациями разработаны и утверждены «Положение по проведению рейтинговой оценки деятельности аудиторских организаций Республики Узбекистан» и «Методика рейтинговой оценки деятельности аудиторских организации Республики Узбекистан». Проведение рейтинга и подведение его итогов строго контролируется общественным советом, в состав которого вошли представители министерств, аудиторских организаций и общественных профессиональных объединений аудиторов. Рейтинговая услуга платная. По итогам рейтинга аудиторским организациям будут представлены развернутые итоги рейтинга. Обобщенные его итоги будут опубликованы в средствах массовой информации республики. На основе собранных материалов будут подготовлены аналитические отчеты, содержащие в обезличенном виде максимальные, минимальные и усредненные показатели, а также тенденции рынка аудиторских услуг за отчетный период.",
+      companyTitle: "Рэнкинговая компания Республики Узбекистан ООО «АудитРейтинг»",
+      text: "В соответствии с Законом «Об аудиторской деятельности» и постановлением Президента Республики Узбекистан «О дальнейшем совершенствовании аудиторских организаций и повышении их ответственности за качество оказываемых услуг» от 4 апреля 2007 года № ПП-615 общественные профессиональные объединения аудиторов совместно с ООО «АудитРейтинг» осуществляют рэнкинговую оценку деятельности аудиторских организаций по итогам года. Для решения организационных вопросов, связанных с проведением рэнкинга, общественными профессиональными организациями разработаны и утверждены «Положение по проведению рэнкинговой оценки деятельности аудиторских организаций Республики Узбекистан» и «Методика рэнкинговой оценки деятельности аудиторских организации Республики Узбекистан». Проведение рэнкинга и подведение его итогов строго контролируется общественным советом, в состав которого вошли представители министерств, аудиторских организаций и общественных профессиональных объединений аудиторов. Рэнкинговая услуга платная. По итогам рэнкинга аудиторским организациям будут представлены развернутые итоги рэнкинга. Обобщенные его итоги будут опубликованы в средствах массовой информации республики. На основе собранных материалов будут подготовлены аналитические отчеты, содержащие в обезличенном виде максимальные, минимальные и усредненные показатели, а также тенденции рынка аудиторских услуг за отчетный период.",
     },
     aboutGoal: {
       label: "Наша цель:",
@@ -80,7 +80,7 @@ export const translations = {
     aboutHistory: {
       title: "Наша история",
       items: [
-        { year: 2007, text: "Основание компании и начало рейтинговой деятельности." },
+        { year: 2007, text: "Основание компании и начало рэнкинговой деятельности." },
         { year: 2012, text: "Расширение методологии и внедрение новых стандартов оценки." },
         { year: 2020, text: "Обновление методики с учетом международных подходов." },
         { year: 2025, text: "Запуск современной цифровой платформы для участников." },
@@ -89,10 +89,10 @@ export const translations = {
     aboutStats: {
       title: "Ключевые показатели",
       items: [
-        { value: "15+", label: "лет опыта в рейтинговой оценке" },
+        { value: "15+", label: "лет опыта в рэнкинговой оценке" },
         { value: "100+", label: "оцененных организаций" },
         { value: "100%", label: "официальные и проверенные данные" },
-        { value: "24/7", label: "доступность рейтингов и отчетов" },
+        { value: "24/7", label: "доступность рэнкингов и отчетов" },
       ],
     },
     aboutContacts: {
@@ -128,11 +128,11 @@ export const translations = {
     },
     ratings: {
       title: "Рэнкинги",
-      chooseYear: "выберите год рейтинга:",
+      chooseYear: "выберите год рэнкинга:",
       loading: "Загрузка...",
-      noRatings: "Нет доступных рейтингов",
+      noRatings: "Нет доступных рэнкингов",
       selectYear: "Выберите год в списке",
-      selectYearDesc: "Выберите год оценки справа, что бы просмотреть результаты рейтинга",
+      selectYearDesc: "Выберите год оценки справа, что бы просмотреть результаты рэнкинга",
       download: "Скачать",
       loadingDoc: "Загрузка документа...",
       previewError: "Не удалось загрузить предпросмотр",
@@ -165,7 +165,7 @@ export const translations = {
         news: "Yangiliklar",
         method: "Metodika",
         regulations: "Arxivlar",
-        ratings: "Reytinglar",
+        ratings: "Rankinglar",
         contacts: "Aloqa",
       },
       requestQuote: "Baholash so'rovi",
@@ -175,7 +175,7 @@ export const translations = {
       navTitle: "NAVIGATSIYA",
       services: "Xizmatlar",
       cases: "Keyslar",
-      ratings: "Reytinglar",
+      ratings: "Rankinglar",
       about: "Biz haqimizda",
       docsTitle: "HUJJATLAR",
       privacy: "Maxfiylik siyosati",
@@ -183,8 +183,8 @@ export const translations = {
       disclosure: "Ma'lumotlarni oshkor qilish",
       contactsTitle: "ALOQA",
       contactUs: "Biz bilan bog'lanish",
-      copyright: "© 2014–2017 «Auditreyting» MChJ",
-      companyDesc: "O'zbekiston Respublikasi reyting kompaniyasi",
+      copyright: "© 2014–2017 «AuditRating» MChJ",
+      companyDesc: "O'zbekiston Respublikasi ranking kompaniyasi",
     },
     heroCard: {
       about: { title: "Biz haqimizda", description: "Bizning missiyamiz, qadriyatlarimiz va ish tamoyillarimiz haqida ko'proq bilib oling", linkText: "Batafsil" },
@@ -196,7 +196,7 @@ export const translations = {
       titleLine1: "Audit sohasida",
       titleLine2: "yetakchi ishtirokchilarni",
       titleLine3: "aniqlash.",
-      text: "Reyting reyting ishtirokchilari tomonidan taqdim etilgan, tashkilot rahbarining muhri va imzosi bilan tasdiqlangan ma'lumotlar asosida shakllantiriladi; ma'lumotlarni solishtirish rasmiy, hisobot va statistik hujjatlarga asoslanadi.",
+      text: "Ranking ranking ishtirokchilari tomonidan taqdim etilgan, tashkilot rahbarining muhri va imzosi bilan tasdiqlangan ma'lumotlar asosida shakllantiriladi; ma'lumotlarni solishtirish rasmiy, hisobot va statistik hujjatlarga asoslanadi.",
       contactUs: "Biz bilan bog'laning",
       viewDecree: "Qarorni ko'rish",
     },
@@ -219,19 +219,19 @@ export const translations = {
     },
     aboutHero: {
       title: "Biz haqimizda",
-      companyTitle: "O'zbekiston Respublikasi reyting kompaniyasi «AuditReyting» MChJ",
-      text: "«Auditorlik faoliyati to'g'risida»gi Qonun va O'zbekiston Respublikasi Prezidentining 2007-yil 4-apreldagi PQ-615-son «Auditorlik tashkilotlarini yanada takomillashtirish va ko'rsatiladigan xizmatlar sifati uchun ularning javobgarligini oshirish to'g'risida»gi qaroriga muvofiq, jamoat kasbiy auditorlar birlashmalari «Auditreyting» MChJ bilan birgalikda yil yakunlari bo'yicha auditorlik tashkilotlari faoliyatini reytingli baholashni amalga oshiradi. Reyting o'tkazish bilan bog'liq tashkiliy masalalarni hal qilish uchun jamoat kasbiy tashkilotlari tomonidan «O'zbekiston Respublikasi auditorlik tashkilotlari faoliyatini reytingli baholashni o'tkazish to'g'risida»gi Nizom va «O'zbekiston Respublikasi auditorlik tashkilotlari faoliyatini reytingli baholash metodikasi» ishlab chiqilgan va tasdiqlangan. Reytingni o'tkazish va uning yakunlarini chiqarish vazirliklar, auditorlik tashkilotlari va jamoat kasbiy auditorlar birlashmalari vakillaridan iborat jamoatchilik kengashi tomonidan qat'iy nazorat qilinadi. Reyting xizmati pullik. Reyting yakunlariga ko'ra auditorlik tashkilotlariga reytingning batafsil natijalari taqdim etiladi. Uning umumlashtirilgan natijalari respublika ommaviy axborot vositalarida e'lon qilinadi. To'plangan materiallar asosida shaxsiylashtirilmagan holda maksimal, minimal va o'rtacha ko'rsatkichlarni, shuningdek hisobot davri uchun auditorlik xizmatlari bozori tendensiyalarini o'z ichiga olgan tahliliy hisobotlar tayyorlanadi.",
+      companyTitle: "O'zbekiston Respublikasi ranking kompaniyasi «AuditRating» MChJ",
+      text: "«Auditorlik faoliyati to'g'risida»gi Qonun va O'zbekiston Respublikasi Prezidentining 2007-yil 4-apreldagi PQ-615-son «Auditorlik tashkilotlarini yanada takomillashtirish va ko'rsatiladigan xizmatlar sifati uchun ularning javobgarligini oshirish to'g'risida»gi qaroriga muvofiq, jamoat kasbiy auditorlar birlashmalari «AuditRating» MChJ bilan birgalikda yil yakunlari bo'yicha auditorlik tashkilotlari faoliyatini rankingli baholashni amalga oshiradi. Rankingni o'tkazish bilan bog'liq tashkiliy masalalarni hal qilish uchun jamoat kasbiy tashkilotlari tomonidan «O'zbekiston Respublikasi auditorlik tashkilotlari faoliyatini rankingli baholashni o'tkazish to'g'risida»gi Nizom va «O'zbekiston Respublikasi auditorlik tashkilotlari faoliyatini rankingli baholash metodikasi» ishlab chiqilgan va tasdiqlangan. Rankingni o'tkazish va uning yakunlarini chiqarish vazirliklar, auditorlik tashkilotlari va jamoat kasbiy auditorlar birlashmalari vakillaridan iborat jamoatchilik kengashi tomonidan qat'iy nazorat qilinadi. Ranking xizmati pullik. Ranking yakunlariga ko'ra auditorlik tashkilotlariga rankingning batafsil natijalari taqdim etiladi. Uning umumlashtirilgan natijalari respublika ommaviy axborot vositalarida e'lon qilinadi. To'plangan materiallar asosida shaxsiylashtirilmagan holda maksimal, minimal va o'rtacha ko'rsatkichlarni, shuningdek hisobot davri uchun auditorlik xizmatlari bozori tendensiyalarini o'z ichiga olgan tahliliy hisobotlar tayyorlanadi.",
     },
     aboutGoal: {
       label: "Bizning maqsadimiz:",
-      text: "O'zbekiston auditorlik tashkilotlari faoliyati reytingi natijalari haqida jamoatchilikni xabardor qilish.",
+      text: "O'zbekiston auditorlik tashkilotlari faoliyati rankigi natijalari haqida jamoatchilikni xabardor qilish.",
       targetAlt: "Maqsad",
-      officeAlt: "AuditReyting ofisi",
+      officeAlt: "AuditRanking ofisi",
     },
     aboutHistory: {
       title: "Bizning tariximiz",
       items: [
-        { year: 2007, text: "Kompaniyaning tashkil etilishi va reyting faoliyatining boshlanishi." },
+        { year: 2007, text: "Kompaniyaning tashkil etilishi va ranking faoliyatining boshlanishi." },
         { year: 2012, text: "Metodologiyaning kengaytirilishi va yangi baholash standartlarining joriy etilishi." },
         { year: 2020, text: "Xalqaro yondashuvlarni hisobga olgan holda metodikaning yangilanishi." },
         { year: 2025, text: "Ishtirokchilar uchun zamonaviy raqamli platformaning ishga tushirilishi." },
@@ -240,10 +240,10 @@ export const translations = {
     aboutStats: {
       title: "Asosiy ko'rsatkichlar",
       items: [
-        { value: "15+", label: "reytingli baholashda tajriba yili" },
+        { value: "15+", label: "rankingli baholashda tajriba yili" },
         { value: "100+", label: "baholangan tashkilotlar" },
         { value: "100%", label: "rasmiy va tekshirilgan ma'lumotlar" },
-        { value: "24/7", label: "reytinglar va hisobotlarning mavjudligi" },
+        { value: "24/7", label: "rankinglar va hisobotlarning mavjudligi" },
       ],
     },
     aboutContacts: {
@@ -278,12 +278,12 @@ export const translations = {
       openPdf: "PDF-ni ochish",
     },
     ratings: {
-      title: "Reytinglar",
-      chooseYear: "reyting yilini tanlang:",
+      title: "Rankinglar",
+      chooseYear: "ranking yilini tanlang:",
       loading: "Yuklanmoqda...",
-      noRatings: "Mavjud reytinglar yo'q",
+      noRatings: "Mavjud rankinglar yo'q",
       selectYear: "Ro'yxatdan yilni tanlang",
-      selectYearDesc: "Reyting natijalarini ko'rish uchun o'ngdan baholash yilini tanlang",
+      selectYearDesc: "Ranking natijalarini ko'rish uchun o'ngdan baholash yilini tanlang",
       download: "Yuklab olish",
       loadingDoc: "Hujjat yuklanmoqda...",
       previewError: "Oldindan ko'rishni yuklab bo'lmadi",
