@@ -33,7 +33,7 @@ export default function AdminSidebar() {
             href={link.href}
             className={`${styles.navItem} ${pathname === link.href ? styles.active : ""}`}
           >
-            <Image src={link.icon} alt={link.label} width={24} height={24} />
+            <Image src={link.icon} alt={link.label} width={20} height={20} />
             <span>{link.label}</span>
           </Link>
         ))}
