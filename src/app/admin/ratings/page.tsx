@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import styles from "./page.module.scss";
+import { apiFetch } from "@/lib/apiFetch";
 
 interface Rating {
   _id: string;
@@ -45,31 +46,29 @@ export default function AdminRatingsPage() {
     }
 
     const formData = new FormData();
-    formData.append("title", title);
-    formData.append("year", year);
-    formData.append("file", file);
+formData.append("title", title);
+formData.append("year", year);
+formData.append("file", file);
 
-    setUploading(true);
-    try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ratings`, {
-        method: "POST",
-        credentials: "include",
-        body: formData,
-      });
+setUploading(true);
+try {
+  const res = await apiFetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ratings`, {
+    method: "POST",
+    body: formData,
+  });
 
-      if (!res.ok) throw new Error();
-      setSuccess("Рейтинг успешно загружен");
-      setTitle("");
-      setYear("");
-      setFile(null);
-      if (fileRef.current) fileRef.current.value = "";
-      fetchRatings();
-    } catch {
-      setError("Ошибка при загрузке");
-    } finally {
-      setUploading(false);
-    }
-  };
+  if (!res.ok) throw new Error();
+  setSuccess("Рейтинг успешно загружен");
+  setTitle("");
+  setYear("");
+  setFile(null);
+  if (fileRef.current) fileRef.current.value = "";
+  fetchRatings();
+} catch {
+  setError("Ошибка при загрузке");
+} finally {
+  setUploading(false);
+}
 
   const handleDelete = async (id: string) => {
     if (!confirm("Удалить рейтинг?")) return;
