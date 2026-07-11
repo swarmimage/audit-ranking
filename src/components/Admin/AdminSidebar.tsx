@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./AdminSidebar.module.scss";
+import Image from "next/image";
 
 const links = [
-  { href: "/admin/ratings",     label: "Рэнкинги",               icon: "🏆" },
-  { href: "/admin/methodology", label: "Методика",               icon: "📄" },
-  { href: "/admin/news",        label: "Новости",                icon: "📰" },
-  { href: "/admin/regulations", label: "Нормативные документы",  icon: "⚖️" },
+  { href: "/admin/ratings", label: "Рэнкинги", icon: "/admin/cup.svg" },
+  { href: "/admin/methodology", label: "Методика", icon: "/admin/doc.svg" },
+  { href: "/admin/news", label: "Новости", icon: "/admin/news.svg" },
+  {
+    href: "/admin/regulations",
+    label: "Нормативные документы",
+    icon: "/admin/scales.svg",
+  },
 ];
 
 export default function AdminSidebar() {
@@ -28,8 +33,8 @@ export default function AdminSidebar() {
             href={link.href}
             className={`${styles.navItem} ${pathname === link.href ? styles.active : ""}`}
           >
-            <span>{link.icon}</span>
-            {link.label}
+            <Image src={link.icon} alt={link.label} width={24} height={24} />
+            <span>{link.label}</span>
           </Link>
         ))}
       </nav>

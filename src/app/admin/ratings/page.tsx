@@ -69,6 +69,7 @@ try {
 } finally {
   setUploading(false);
 }
+}
 
   const handleDelete = async (id: string) => {
     if (!confirm("Удалить рейтинг?")) return;
@@ -84,6 +85,7 @@ try {
   };
 
   return (
+    
     <div>
       <h1 className={styles.pageTitle}>Рэнкинги</h1>
 
