@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
 
             <div className={styles.footer_column}>
               <h2>{t("footer.contactsTitle")}</h2>
-              <a href="mailto:auditrenkin@gmail.com" className={styles.email}>
-                auditrenkin@gmail.com
+              <a href="mailto:auditrenking@gmail.com" className={styles.email}>
+                auditrenking@gmail.com
               </a>
               <Link href="/contacts" className={styles.btn_contact}>
                 {t("footer.contactUs")}

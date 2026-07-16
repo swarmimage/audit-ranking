@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   ...siteMetadata,
   icons: {
-    icon: "/favicon.jpg",
+    icon: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
 };
@@ -26,7 +26,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "AuditRanking",
   url: "https://auditranking.uz",
-  logo: "https://auditranking.uz/og-default.png",
+  logo: "https://auditranking.uz/favicon.svg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "улица Бодомзор йули, 1А",
@@ -38,7 +38,7 @@ const organizationSchema = {
       "@type": "ContactPoint",
       telephone: "+998-71-235-78-04",
       contactType: "customer service",
-      email: "auditrenkin@gmail.com",
+      email: "auditrenking@gmail.com",
       availableLanguage: ["ru", "uz"],
     },
   ],
